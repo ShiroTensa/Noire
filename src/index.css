@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,body,#root{height:100%}
+  body{@apply bg-black text-gray-100; font-family:Inter, sans-serif;}
+}
+
+:root{--gold:#d4af37}
+
+.text-gold{color:var(--gold)}
+.bg-gold{background-color:var(--gold); color:black}
+.button-anim{transition:transform .15s ease, box-shadow .18s ease}
+.button-anim:hover{transform:translateY(-3px); box-shadow:0 10px 30px rgba(0,0,0,0.45)}
